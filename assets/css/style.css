@@ -25,6 +25,10 @@ font-family: 'Poppins', sans-serif;
 /*-------------------------------------
 		1.General css (Reset code)
 --------------------------------------*/
+
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -213,14 +217,31 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     text-transform: uppercase;
     line-height: 1.5;
 }
+.header-text .ani{
+    color: #fff;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+    animation-name: textzoom;
+animation-duration: 5s;
+}
+@keyframes textzoom {
+    0%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 54px;
+    }
+}
 .header-text h2 span {color: #d92cf9;}
 .header-text p {
     color: #fff;
     font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 30px 0 60px;
-    letter-spacing: 1px;
+    /* margin: 30px 0 60px;
+    letter-spacing: 1px; */
 }
 .header-text a {
     width: 200px;
